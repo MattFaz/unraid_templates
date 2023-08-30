@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+    <Name>FireflyIII</Name>
+    <Repository>fireflyiii/core</Repository>
+    <Registry>https://hub.docker.com/r/fireflyiii/core/</Registry>
+    <Network>bridge</Network>
+    <Privileged>false</Privileged>
+    <Support>https://forums.unraid.net/topic/144385-support-mattfaz-repo/</Support>
+    <Project>https://docs.firefly-iii.org/</Project>
+    <Overview>"Firefly III" is a (self-hosted) manager for your personal finances. It can help you
+        keep track of your expenses and income, so you can spend less and save more. Firefly III
+        supports the use of budgets, categories and tags. Using a bunch of external tools, you can
+        import data. It also has many neat financial reports available.</Overview>
+    <Category>Productivity:</Category>
+    <WebUI>http://[IP]:[PORT:1638]</WebUI>
+    <Icon>https://raw.githubusercontent.com/MattFaz/unraid_templates/main/images/fireflyiii-logo.png</Icon>
+    <Config Name="Upload Path" Target="/var/www/html/storage/upload" Default="" Mode="rw"
+        Description="appdata" Type="Path" Display="always" Required="true" Mask="false">
+        /mnt/user/appdata/firefly-iii</Config>
+    <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port"
+        Display="always" Required="true" Mask="false" />
+    <Config Name="APP_KEY" Target="APP_KEY" Default="" Mode="" Description="32 character key"
+        Type="Variable" Display="always" Required="true" Mask="false" />
+    <Config Name="DB_HOST" Target="DB_HOST" Default="" Mode="" Description="Database Host"
+        Type="Variable" Display="always" Required="true" Mask="false" />
+    <Config Name="DB_CONNECTION" Target="DB_CONNECTION" Default="" Mode=""
+        Description="Database Connection (mysql or pgsql)" Type="Variable" Display="always"
+        Required="true" Mask="false" />
+    <Config Name="DB_DATABASE" Target="DB_DATABASE" Default="" Mode="" Description="Database Name"
+        Type="Variable" Display="always" Required="true" Mask="false" />
+    <Config Name="DB_USERNAME" Target="DB_USERNAME" Default="" Mode=""
+        Description="Database Username" Type="Variable" Display="always" Required="true"
+        Mask="false" />
+    <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Mode=""
+        Description="Database Password" Type="Variable" Display="always" Required="true" Mask="true" />
+</Container>
