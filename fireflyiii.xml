@@ -12,7 +12,7 @@
         supports the use of budgets, categories and tags. Using a bunch of external tools, you can
         import data. It also has many neat financial reports available.</Overview>
     <Category>Productivity:</Category>
-    <WebUI>http://[IP]:[PORT:1638]</WebUI>
+    <WebUI>http://[IP]:[PORT:1636]</WebUI>
     <Networking>
         <Mode>Bridge</Mode>
         <Publish>
@@ -27,7 +27,7 @@
     <Config Name="Upload Path" Target="/var/www/html/storage/upload" Default="" Mode="rw"
         Description="appdata" Type="Path" Display="always" Required="true" Mask="false">
         /mnt/user/appdata/firefly-iii</Config>
-    <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port"
+    <Config Name="WebUI" Target="8080" Default="1636" Mode="tcp" Description="" Type="Port"
         Display="always" Required="true" Mask="false" />
     <Config Name="APP_KEY" Target="APP_KEY" Default="" Mode="" Description="32 character key"
         Type="Variable" Display="always" Required="true" Mask="false" />
