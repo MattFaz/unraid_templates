@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
     <Name>FireflyIII</Name>
-    <Repository>fireflyiii/core</Repository>
+    <Repository>fireflyiii/core:latest</Repository>
     <Registry>https://hub.docker.com/r/fireflyiii/core/</Registry>
     <Network>bridge</Network>
     <Privileged>false</Privileged>
