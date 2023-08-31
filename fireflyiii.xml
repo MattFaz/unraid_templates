@@ -13,15 +13,27 @@
         import data. It also has many neat financial reports available.</Overview>
     <Category>Productivity:</Category>
     <WebUI>http://[IP]:[PORT:1638]</WebUI>
+    <Networking>
+        <Mode>Bridge</Mode>
+        <Publish>
+            <Port>
+                <HostPort>1636</HostPort>
+                <ContainerPort>8080</ContainerPort>
+                <Protocol>tcp</Protocol>
+            </Port>
+        </Publish>
+    </Networking>
     <Icon>https://raw.githubusercontent.com/MattFaz/unraid_templates/main/images/fireflyiii-logo.png</Icon>
     <Config Name="Upload Path" Target="/var/www/html/storage/upload" Default="" Mode="rw"
         Description="appdata" Type="Path" Display="always" Required="true" Mask="false">
         /mnt/user/appdata/firefly-iii</Config>
-    <Config Name="WebUI" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port"
+    <Config Name="WebUI" Target="8080" Default="" Mode="tcp" Description="" Type="Port"
         Display="always" Required="true" Mask="false" />
     <Config Name="APP_KEY" Target="APP_KEY" Default="" Mode="" Description="32 character key"
         Type="Variable" Display="always" Required="true" Mask="false" />
     <Config Name="DB_HOST" Target="DB_HOST" Default="" Mode="" Description="Database Host"
+        Type="Variable" Display="always" Required="true" Mask="false" />
+    <Config Name="DB_PORT" Target="DB_PORT" Default="" Mode="" Description="Database Port"
         Type="Variable" Display="always" Required="true" Mask="false" />
     <Config Name="DB_CONNECTION" Target="DB_CONNECTION" Default="" Mode=""
         Description="Database Connection (mysql or pgsql)" Type="Variable" Display="always"
