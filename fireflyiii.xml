@@ -12,12 +12,12 @@
         supports the use of budgets, categories and tags. Using a bunch of external tools, you can
         import data. It also has many neat financial reports available.</Overview>
     <Category>Productivity:</Category>
-    <WebUI>http://[IP]:[PORT:1636]</WebUI>
+    <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <Networking>
         <Mode>Bridge</Mode>
         <Publish>
             <Port>
-                <HostPort>1636</HostPort>
+                <HostPort>8080</HostPort>
                 <ContainerPort>8080</ContainerPort>
                 <Protocol>tcp</Protocol>
             </Port>
