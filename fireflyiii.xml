@@ -7,10 +7,7 @@
     <Privileged>false</Privileged>
     <Support>https://forums.unraid.net/topic/144385-support-mattfaz-repo/</Support>
     <Project>https://docs.firefly-iii.org/</Project>
-    <Overview>"Firefly III" is a (self-hosted) manager for your personal finances. It can help you
-        keep track of your expenses and income, so you can spend less and save more. Firefly III
-        supports the use of budgets, categories and tags. Using a bunch of external tools, you can
-        import data. It also has many neat financial reports available.</Overview>
+    <Overview>"Firefly III" is a (self-hosted) manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more. Firefly III supports the use of budgets, categories and tags. Using a bunch of external tools, you can import data. It also has many neat financial reports available.</Overview>
     <Category>Productivity:</Category>
     <WebUI>http://[IP]:[PORT:8080]</WebUI>
     <Networking>
@@ -46,4 +43,7 @@
         Mask="false" />
     <Config Name="DB_PASSWORD" Target="DB_PASSWORD" Default="" Mode=""
         Description="Database Password" Type="Variable" Display="always" Required="true" Mask="true" />
+    <Config Name="TRUSTED_PROXIES" Target="TRUSTED_PROXIES" Default="**" Mode=""
+        Description="Set to ** when using Doceker and/or a reverse proxy"
+        Type="Variable" Display="always" Required="false" Mask="false">**</Config>
 </Container>
